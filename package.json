@@ -11,16 +11,16 @@
   "contributors": [
     {
       "name": "Vittorio Minacori",
-      "url": "https://github.com/vittominacori"
+      "url": "https://github.com/TiagoZhang"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/vittominacori/token-generator.git"
+    "url": "https://github.com/TiagoZhang/token-generator.git"
   },
-  "homepage": "https://github.com/vittominacori/token-generator",
+  "homepage": "https://github.com/TiagoZhang/token-generator",
   "bugs": {
-    "url": "https://github.com/vittominacori/token-generator/issues"
+    "url": "https://github.com/TiagoZhang/token-generator/issues"
   },
   "license": "MIT",
   "devDependencies": {
