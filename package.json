@@ -1,7 +1,7 @@
 {
-  "name": "token-generator",
+  "name": "tiagozhang.github.io",
   "version": "1.0.0",
-  "description": "The most used Smart Contract Generator for ERC20 and BEP20 Token.",
+  "description": "@vittominacori's personal website",
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build",
@@ -11,21 +11,21 @@
   "contributors": [
     {
       "name": "Vittorio Minacori",
-      "url": "https://github.com/TiagoZhang"
+      "url": "https://github.com/vittominacori"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TiagoZhang/token-generator.git"
+    "url": "https://github.com/vittominacori/tiagozhang.github.io.git"
   },
-  "homepage": "https://github.com/TiagoZhang/token-generator",
+  "homepage": "https://github.com/vittominacori/tiagozhang.github.io/",
   "bugs": {
-    "url": "https://github.com/TiagoZhang/token-generator/issues"
+    "url": "https://github.com/vittominacori/tiagozhang.github.io/issues"
   },
   "license": "MIT",
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.8.2",
-    "vuepress": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.0",
+    "vuepress": "^1.8.0",
     "vuepress-plugin-facebook-pixel": "^1.0.0"
   }
 }

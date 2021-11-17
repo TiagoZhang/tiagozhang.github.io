@@ -1,9 +1,30 @@
 const vars = require('./.env.json');
 
 module.exports = {
-  title: 'Token Generator',
-  description: 'The most used Smart Contract Generator for ERC20 and BEP20 Token.',
-  base: '/token-generator/',
+  title: 'Vittorio Minacori | Web and Blockchain Developer',
+  description: "I'm a Software Engineer continually seeking and testing new tools and opportunities for innovation. I live in Catania and I'm maniacally passionate about web applications, blockchain technologies and development tools.",
+  head: [
+    ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no'}],
+    ['meta', {property: 'og:type', content: 'website'}],
+    ['meta', {property: 'og:image', content: 'https://tiagozhang.github.io/assets/images/vittominacori.jpg'}],
+    ['meta', {property: 'twitter:card', content: 'summary_large_image'}],
+    ['meta', {property: 'twitter:image', content: 'https://tiagozhang.github.io/assets/images/vittominacori.jpg'}],
+    ['meta', {name: 'google-site-verification', content: 'Q3pMcwECEGhU_s_cyixqPpPcA8hyrJKEu-vIDEfLAOY'}],
+    ['meta', {name: 'facebook-domain-verification', content: '53g1h8apbdq8dkcc84e2e5lkq1rfym'}],
+    ['meta', {name: 'msvalidate.01', content: '2222C2A799471867FB1E317854E92631'}],
+    ['script',
+      {
+        src: 'https://kit.fontawesome.com/8991cca26e.js',
+        crossorigin: 'anonymous',
+      }
+    ],
+    ['script',
+      {
+        src: 'https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?forceLang=en&theme=momh&thirdparty=1&always=1&noGeoIp=1&scrolling=1&hideDetailsBtn=1',  // eslint-disable-line max-len
+        defer: true,
+      },
+    ],
+  ],
   plugins: [
     ['@vuepress/google-analytics', {
       ga: vars.gaId
@@ -12,44 +33,25 @@ module.exports = {
       pixelId: vars.fbPixelId
     }],
   ],
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no'}],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:url', content: 'https://tiagozhang.github.io/token-generator' }],
-    ['meta', { property: 'og:image', content: 'https://tiagozhang.github.io/token-generator/assets/images/todo.jpg' }], // eslint-disable-line max-len
-    ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { property: 'twitter:image', content: 'https://tiagozhang.github.io/token-generator/assets/images/todo.jpg' }], // eslint-disable-line max-len
-    ['script',
+  themeConfig: {
+    nav: [
+      { text: 'Home', link: '/' },
       {
-        src: 'https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?forceLang=en&theme=momh&thirdparty=1&always=1&noGeoIp=1&scrolling=1&hideDetailsBtn=1',  // eslint-disable-line max-len
-        defer: true,
+        text: 'Details',
+        items: [
+          { text: 'About', link: '/about/#about' },
+          { text: 'Experience', link: '/about/#experience' },
+          { text: 'Projects', link: '/about/#projects' },
+          { text: 'Open Source', link: '/about/#open-source' },
+          { text: 'Education', link: '/about/#education' },
+          { text: 'Research', link: '/about/#research' },
+          { text: 'Skills', link: '/about/#skills' },
+          { text: 'Interests', link: '/about/#interests' },
+          { text: 'Contacts', link: '/about/#contacts' },
+        ],
       },
     ],
-  ],
-  themeConfig: {
-    sidebar: false,
-    search: false,
-    smoothScroll: true,
-    nav: [
-      {
-        text: 'Home',
-        link: '/',
-      },
-      {
-        text: 'Docs',
-        items: [
-          { text: 'How to create ERC20', link: '/docs/how-to-create-erc20-token/' },
-          { text: 'How to create BEP20', link: '/docs/how-to-create-bep20-token/' }
-        ]
-      },
-      {
-        text: 'Create Token',
-        items: [
-          { text: 'ERC20', link: 'https://tiagozhang.github.io/erc20-generator/', target: '_self' },
-          { text: 'BEP20', link: 'https://tiagozhang.github.io/bep20-generator/', target: '_self' }
-        ]
-      }
-    ]
-  },
+    sidebar: 'auto',
+    smoothScroll: true
+  }
 };
